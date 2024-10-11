@@ -1,0 +1,15 @@
+name: Update Cloudflare Public IP
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+
+jobs:
+  run-py:
+    runs-on: self-hosted
+    steps:
+      - name: run python Script
+        run: python pubip_updater.py

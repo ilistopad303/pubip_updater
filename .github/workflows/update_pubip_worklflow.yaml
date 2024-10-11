@@ -12,5 +12,7 @@ jobs:
   run-py:
     runs-on: self-hosted
     steps:
+      - name: checkout
+        uses: actions/checkout@v2
       - name: run python Script
         run: python3 pubip_updater.py

@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - feat/add_workflow
   workflow_dispatch:
 
 

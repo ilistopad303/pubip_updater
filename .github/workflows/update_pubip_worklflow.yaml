@@ -13,4 +13,4 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: run python Script
-        run: python pubip_updater.py
+        run: python3 pubip_updater.py

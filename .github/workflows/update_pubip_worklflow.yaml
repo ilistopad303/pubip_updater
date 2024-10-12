@@ -15,8 +15,8 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
       - name: Install Dependencies
-        run:
-          source /home/ianl303/github-actions/update_pubip/bin/activate
+        run: |
+          source /home/ianl303/github-actions/update_pubip/bin/activate 
           pip -V
 #          python3 -m pip install requests
 #          python3 -m pip install os

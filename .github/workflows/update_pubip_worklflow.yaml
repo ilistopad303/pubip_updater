@@ -20,7 +20,7 @@ jobs:
           python3 -m pip install requests
           python3 -m pip install os_sys
       - name: run python Script
-        with:
+        env:
           CLOUDFLARE_TOKEN: ${{secrets.CLOUDFLARE_TOKEN}}
         run: python3 pubip_updater.py
       - name: Cleanup

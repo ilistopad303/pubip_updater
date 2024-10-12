@@ -21,6 +21,8 @@ for record in record_response:
             # Update the record in cloudflare
             patch_response = requests.patch(f'https://api.cloudflare.com/client/v4/zones/{zone_id}/dns_records/{record_id}',headers={'Authorization': f'Bearer {cloudflare_token}'}, json={'content': f'{pub_ip}'})
             print(patch_response)
+            print("Public IP Updated")
+
         else:
             print("no update needed")
 

@@ -17,8 +17,10 @@ jobs:
       - name: Install Dependencies
         run: |
           source /home/ianl303/github-actions/update_pubip/bin/activate 
-          pip -V
-#          python3 -m pip install requests
-#          python3 -m pip install os
+          python3 -m pip install requests
+          python3 -m pip install os
 #      - name: run python Script
 #        run: python3 pubip_updater.py
+      - name: Cleanup
+        run: |
+          deactivate

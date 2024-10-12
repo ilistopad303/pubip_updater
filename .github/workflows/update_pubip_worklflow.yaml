@@ -14,5 +14,9 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v2
+      - name: Install Dependencies
+        run:
+          pip install requests
+          pip install os
       - name: run python Script
         run: python3 pubip_updater.py

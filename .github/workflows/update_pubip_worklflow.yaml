@@ -26,4 +26,4 @@ jobs:
           python3 pubip_updater.py
       - name: Cleanup
         run: |
-          deactivate
+          source deactivate

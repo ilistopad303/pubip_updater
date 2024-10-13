@@ -18,7 +18,7 @@ jobs:
         run: |
           source /home/ianl303/github-actions/update_pubip/bin/activate 
           python3 -m pip install requests
-          python3 -m pip install os_sys
+#          python3 -m pip install os_sys
       - name: run python Script
         env:
           CLOUDFLARE_TOKEN: ${{secrets.CLOUDFLARE_TOKEN}}

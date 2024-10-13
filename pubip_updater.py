@@ -3,7 +3,7 @@ import os
 import requests
 
 pub_ip = requests.get('https://ipinfo.io').json()['ip']
-cloudflare_token = os.environ.get('CLOUDFLARE_TOKEN')
+cloudflare_token = os.getenv('CLOUDFLARE_TOKEN')
 
 #get Information for the dns record update request
 zone_response = requests.get('https://api.cloudflare.com/client/v4/zones', headers={'Authorization': f'Bearer {cloudflare_token}'}).json()['result']

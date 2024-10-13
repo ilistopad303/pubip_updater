@@ -26,4 +26,5 @@ jobs:
           python3 pubip_updater.py
       - name: Cleanup
         run: |
-          source deactivate
+          source /home/ianl303/github-actions/update_pubip/bin/activate
+          deactivate
